@@ -1,7 +1,10 @@
 body {
-    background-color: rgb(154,26,2);
+    background-color: rgb(211, 128, 113);
 }
 
+.height {
+    max-height: 100vh;
+}
 .createElem {
     font-size: 20px;
 }

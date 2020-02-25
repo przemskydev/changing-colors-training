@@ -1,9 +1,10 @@
 (() => {
 
     /*sorry for the chaos ~P*7 */
+    const body = document.querySelector('body'),
+            button = document.querySelector("#btn"),
+            col10 = document.querySelector('.col-10');
     
-    const button = document.querySelector("#btn");
-    const body = document.querySelector('body');
 
     const rgbHistoryArray = [];
     const hexHistoryArray = [];
@@ -21,12 +22,12 @@
 
         const rgbValue = document.createElement('section');
         rgbValue.innerHTML = `<h3 class="createElem">rgb(${num1}, ${num2}, ${num3})</h3><br>`
-        const subEl = body.querySelector(".createElem");
+        const subEl = col10.querySelector(".createElem");
 
         if (typeof subEl != 'undefined' && subEl != null) {
             subEl.innerHTML = `<h3 class="createElem">rgb(${num1}, ${num2}, ${num3})</h3>`
         } else {
-            body.appendChild(rgbValue);
+            col10.appendChild(rgbValue);
         }
 
     };
@@ -36,12 +37,12 @@
 
         const hexValue = document.createElement('section');
         hexValue.innerHTML = `<h3 class="createElemHex">HEX: #${val1}${val2}${val3}</h3><br>`
-        const subEl = body.querySelector(".createElemHex");
+        const subEl = col10.querySelector(".createElemHex");
 
         if (typeof subEl != 'undefined' && subEl != null) {
             subEl.innerHTML = `<h3 class="createElemHex">HEX: #${val1}${val2}${val3}</h3>`
         } else {
-            body.appendChild(hexValue);
+            col10.appendChild(hexValue);
         }
 
     }
