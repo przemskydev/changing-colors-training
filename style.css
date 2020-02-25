@@ -3,12 +3,17 @@ body {
 }
 
 .height {
-    max-height: 100vh;
-}
-.createElem {
-    font-size: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.createElemHex {
+.colorCode {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    min-width: 50vh;
+    min-height: 10vh;
 }

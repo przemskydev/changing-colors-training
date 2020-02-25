@@ -20,30 +20,16 @@
     //create elem with rgb color code
     const createElemRgb = (num1, num2, num3) => {
 
-        const rgbValue = document.createElement('section');
-        rgbValue.innerHTML = `<h3 class="createElem">rgb(${num1}, ${num2}, ${num3})</h3><br>`
-        const subEl = col10.querySelector(".createElem");
-
-        if (typeof subEl != 'undefined' && subEl != null) {
-            subEl.innerHTML = `<h3 class="createElem">rgb(${num1}, ${num2}, ${num3})</h3>`
-        } else {
-            col10.appendChild(rgbValue);
-        }
+        const rgbValue = document.querySelector('#rgb');
+        rgbValue.textContent = `rgb(${num1}, ${num2}, ${num3})`
 
     };
 
     //create elem with hex color code
     const createHexElem = (val1, val2, val3) => {
 
-        const hexValue = document.createElement('section');
-        hexValue.innerHTML = `<h3 class="createElemHex">HEX: #${val1}${val2}${val3}</h3><br>`
-        const subEl = col10.querySelector(".createElemHex");
-
-        if (typeof subEl != 'undefined' && subEl != null) {
-            subEl.innerHTML = `<h3 class="createElemHex">HEX: #${val1}${val2}${val3}</h3>`
-        } else {
-            col10.appendChild(hexValue);
-        }
+        const hexValue = document.querySelector('#hex');
+        hexValue.textContent = `HEX: #${val1}${val2}${val3}`
 
     }
 
