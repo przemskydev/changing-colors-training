@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(211, 128, 113);
+}
+
+.height {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorCode {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    min-width: 50vh;
+    min-height: 10vh;
+}
